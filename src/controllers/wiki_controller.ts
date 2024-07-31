@@ -1,8 +1,8 @@
-import { Controller, http } from 'fortjs';
+import { Controller, http, textResult } from 'fortjs';
 
 export class WikiController extends Controller {
-  @http.post('/')
+  @http.get('/')
   retrieveWikipedia() {
-    return true;
+    return textResult('hello world!!!!');
   }
 }
